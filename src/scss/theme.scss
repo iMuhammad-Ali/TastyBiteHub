@@ -1,6 +1,4 @@
-/* -------------------------------------------------------------------------- */
-/*                                 Theme                                      */
-/* -------------------------------------------------------------------------- */
+// Theme
 
 @import "../../node_modules/bootstrap/scss/_functions.scss";
 @import "theme/functions";
@@ -13,17 +11,11 @@
 @import 'theme/_utilities.scss';
 @import "../../node_modules/bootstrap/scss/variables";
 
-/*-----------------------------------------------
-|   Bootstrap Styles
------------------------------------------------*/
+// Bootstrap Styles
 @import "bootstrap";
 
-/*-----------------------------------------------
-|   Theme Styles
------------------------------------------------*/
+// Theme Styles
 @import "theme/theme";
 
-/*-----------------------------------------------
-|   User Styles
------------------------------------------------*/
+// User Styles
 @import "user";

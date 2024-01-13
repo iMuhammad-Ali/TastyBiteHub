@@ -6,11 +6,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-/* -------------------------------------------------------------------------- */
-
-/*                                    Utils                                   */
-
-/* -------------------------------------------------------------------------- */
 var docReady = function docReady(fn) {
   // see if DOM is already available
   if (document.readyState === 'loading') {
@@ -223,11 +218,8 @@ var utils = {
   setItemToStore: setItemToStore,
   getStoreSpace: getStoreSpace
 };
-/* -------------------------------------------------------------------------- */
 
-/*                                  Detector                                  */
-
-/* -------------------------------------------------------------------------- */
+/* -------------------------- Detector -------------------------- */
 
 var detectorInit = function detectorInit() {
   var _window = window,
@@ -250,7 +242,6 @@ var detectorInit = function detectorInit() {
 /*-----------------------------------------------
 |   Top navigation opacity on scroll
 -----------------------------------------------*/
-
 
 var navbarInit = function navbarInit() {
   var Selector = {
@@ -346,12 +337,6 @@ var navbarInit = function navbarInit() {
     });
   }
 };
-/* -------------------------------------------------------------------------- */
-
-/*                                Scroll To Top                               */
-
-/* -------------------------------------------------------------------------- */
-
 
 var scrollToTop = function scrollToTop() {
   document.querySelectorAll('[data-anchor] > a, [data-scroll-to]').forEach(function (anchor) {
@@ -369,12 +354,8 @@ var scrollToTop = function scrollToTop() {
       window.location.hash = id;
     });
   });
-}; // /* -------------------------------------------------------------------------- */
-// /*                            Theme Initialization                            */
-// /* -------------------------------------------------------------------------- */
-
+};
 
 docReady(navbarInit);
 docReady(detectorInit);
 docReady(scrollToTop);
-//# sourceMappingURL=theme.js.map
