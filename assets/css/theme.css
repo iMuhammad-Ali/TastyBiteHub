@@ -18423,7 +18423,7 @@ ul {
 
 .input-group-icon .input-box-icon {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 1rem;
   color: #EEEEEE;
   -webkit-transform: translateY(-50%);
